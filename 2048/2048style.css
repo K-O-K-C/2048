@@ -1,0 +1,221 @@
+html{
+    height: 100%;
+    user-select: none;
+}
+
+.logo{
+    width:40%;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fda604;
+    float: left;
+    position: relative;
+}
+
+body{
+    user-select: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(244, 250, 240) ;
+    overflow: hidden;
+}
+ .container{
+     margin:auto;
+     width: 452px;
+     height: 100%;
+     overflow: hidden;
+     position: relative;
+ }
+ 
+ .scoreBar{
+     width: 50%;
+     float:right;
+     background: #fff;
+     color: #111;
+
+     padding:10px;
+     position: relative;
+     margin-top:10px;
+ }
+
+ #score{
+     font-size: 50px;
+ }
+ 
+ #addScore{
+     position: absolute;
+     bottom: 0px;
+     font-size: 30px;
+     color:#999;
+     opacity: .8;
+     top:4px;
+     right: 0;
+ }
+#addScore.show{
+    opacity: .8;
+    transition:all .5s ease;   -ms-transition:all .5s ease; -moz-transition:all .5s ease; -o-transition:all .5s ease; -webkit-transition:all .5s ease; 
+
+}
+#addScore.hide{
+    opacity: 0;
+    transition:all .5s ease;   -ms-transition:all .5s ease; -moz-transition:all .5s ease; -o-transition:all .5s ease; -webkit-transition:all .5s ease; 
+}
+
+#stage{
+    background: #f77811;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top:50%;
+    left:0;
+    margin-top: -200px;
+    border: 1px solid #eee;
+    
+}
+
+
+
+.cover{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.row0{
+    top:10px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+.row1{
+    top:120px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+.row2{
+    top:230px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+.row3{
+    top:340px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+
+.cell0{
+    left:10px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+.cell1{
+    left:120px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+.cell2{
+    left:230px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+.cell3{
+    left:340px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+
+span{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    background: #fff;
+    font-size: 43px;
+    user-select: none;
+}
+
+
+.num2{
+    background: rgb(250, 133, 24);
+    color:rgb(0, 0, 0);
+    font-size: 100px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+
+.num4{
+    background: #f8c008;
+    color: #ff2600;
+    font-size: 100px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+
+.num8{
+    background: #fffb01;
+    color:#f83888;
+    font-size: 100px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+
+.num16{
+    background: #9ddf03;
+    color:rgb(255, 14, 235);
+    font-size: 80px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease; 
+}
+
+.num32{
+    background: #00ff00;
+    color: #008afc;
+    font-size: 80px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
+}
+
+.num64{
+    background: #029aff;
+    color:rgb(18, 0, 182);
+    font-size: 80px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
+}
+
+.num128{
+    background: rgb(0, 0, 0);
+    color: #2bfc01;
+    font-size: 52px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
+}
+
+.num256{
+    background: #d13100;
+    color:#ffcc66;
+    font-size: 52px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
+}
+
+.num512{
+    background: #fff300;
+    color: #FB4E4E;
+    font-size: 52px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
+}
+
+.num1024{
+    background: #0040a7;
+    color: #f6f7ff;
+    font-size: 52px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
+}
+
+.num2048{
+    background: #000000;
+    color: #ffffff;
+    font-size: 52px;
+
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
+}
+
+.num4096{
+    background: #ff0099;
+    color: #fff;
+    font-size: 52px;
+    transition:all .2s ease;   -ms-transition:all .2s ease; -moz-transition:all .2s ease; -o-transition:all .2s ease; -webkit-transition:all .2s ease;
+}
